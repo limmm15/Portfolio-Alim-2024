@@ -95,6 +95,37 @@ def posttesti():
     db.testimoni.insert_one(doc)
     return redirect(url_for('home', succes=True))
 
+@app.route("/detail1")
+def detail1():
+    return render_template ('detailProject1.html')
+
+@app.route("/detail2")
+def detail2():
+    return render_template ('detailProject2.html')
+
+@app.route("/detail3")
+def detail3():
+    return render_template ('detailProject3.html')
+
+@app.route("/detail4")
+def detail4():
+    return render_template ('detailProject4.html')
+
+@app.route("/detail5")
+def detail5():
+    return render_template ('detailProject5.html')
+
+@app.route("/detail6")
+def detail6():
+    return render_template ('detailProject6.html')
+
+@app.route("/detail7")
+def detail7():
+    return render_template ('detailProject7.html')
+
+@app.route("/detail8")
+def detail8():
+    return render_template ('detailProject8.html')
 
 # Admin Panel
 
